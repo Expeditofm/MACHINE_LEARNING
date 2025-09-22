@@ -1,0 +1,338 @@
+
+%%%%%%%%%%%% STRUCTURE %%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%% PAGES STYLE %%%%%%%%%
+\usepackage{fancyhdr}
+\fancypagestyle{main}{
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO]{\thepage}
+\fancyfoot[CO]{}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfig}
+\usepackage{mathptmx}
+\usepackage{changepage}
+\usepackage{listings}
+
+%\usepackage[alf]{abntex2cite}
+
+%%%%%%%%%%% PDF METADATA %%%%%%%%%%%%%
+\usepackage[ pdftitle={TCC - Atyson Jaime De Sousa Martins},
+pdfkeywords={Sistema Ball and Beam,Controle,Automação,UFRN},
+hidelinks]{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\onehalfspacing
+
+\thispagestyle{empty}
+
+\setcounter{page}{1}
+
+%%%%%%%%%%%% LOGOS %%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[!ht]
+
+\centering
+
+\subfloat{
+\includegraphics[width=5cm]{UNINASSAU.png}
+\label{UNINASSAU Logo}
+}
+
+%\caption{}
+\label{Logos}
+
+\end{figure}
+
+%%%%%%%%%%%%%%% CAPA %%%%%%%%%%%%%%%%%
+
+\vspace{-0.8cm}
+
+\begin{center}
+{\bf{\normalsize CENTRO UNIVERSITÁRIO MAURÍCIO DE NASSAU\\
+CURSO DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS\\
+MACHINE LEARNING
+}}
+
+
+\vspace{3.6cm}
+
+{\bf{\large PROJETO I \\ 
+TEMA: }}
+
+
+\vspace{3.6cm}
+
+\begin{flushright}
+\begin{normalsize}
+LÍDER: - Mat. Nº \\
+PROGRAMADOR I: - Mat. Nº \\
+PROGRAMADOR II: - Mat. Nº \\
+REDATOR: - Mat. Nº \\
+AUXILIAR: - Mat. Nº \\
+\vspace{0.8cm}
+
+\end{normalsize}
+\end{flushright}
+
+
+\vspace{4.0cm}
+
+{\large Natal-RN\\2025}
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%  CONTRA-CAPA %%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\begin{normalsize}
+LÍDER: - Mat. Nº \\
+PROGRAMADOR I: - Mat. Nº \\
+PROGRAMADOR II: - Mat. Nº \\
+REDATOR: - Mat. Nº \\
+AUXILIAR: - Mat. Nº \\
+\vspace{0.8cm}
+
+
+\end{normalsize}
+\end{center}
+\vspace{3cm}
+
+{\bf{\large {\centering \MakeUppercase {PROJETO I \\ 
+TEMA: }\\}}}
+
+\vspace{4cm}
+
+\begin{adjustwidth}{6.5cm}{0cm}
+
+{\normalsize
+
+Relatório presentado à disciplina de
+Machine Learning, correspondente à 
+avaliação da 1ª Atividade Prática 2025.2 
+do curso de Análise e Desenvolvimento de Sistemas da
+Universidade Federal do Rio Grande do Norte, sob
+orientação do {\bf Profº Eng. Esp. José Lindenberg de Andrade.}
+
+}
+
+\end{adjustwidth}
+
+\vspace{2cm}
+
+\begin{center}
+
+Professor: Eng. Esp. José Lindenberg de Andrade.
+
+\vspace{5.5cm}
+
+{\large Natal-RN\\
+2025}
+
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%%  RESUMO %%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+{\large \textbf{RESUMO}}
+\end{center}
+
+\vspace{3cm}
+
+\begin{flushleft}
+
+Esse relatório tem como objetivo... O resumo é uma apresentação concisa do conteúdo do relatório. Ele deve destacar os objetivos, a metodologia utilizada, os resultados principais e as conclusões mais relevantes, sem incluir detalhes excessivos ou interpretações subjetivas.
+
+\end{flushleft}
+
+\vspace{1.5cm}
+
+\textbf{Palavras-chave: Palavra 1; Palavra 2; Palavra 3.} 
+
+\newpage
+
+%%%%%%%%% LISTA DE FIGURAS %%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\listoffigures
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%% SUMÁRIO %%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+
+\begin{center}
+\tableofcontents
+\end{center}
+
+\newpage
+
+%%%%%%%%%%%%%%% INTRODUÇÃO %%%%%%%%%%%
+
+\section{INTRODUÇÃO}
+\hspace{2.5ex}
+A introdução de um relatório tem como objetivo contextualizar o tema abordado, apresentar a justificativa do estudo e delimitar o problema investigado. Nesse espaço, busca-se situar o leitor quanto à relevância do assunto, indicando os objetivos gerais e específicos do trabalho, bem como a metodologia empregada de forma resumida. Assim, a introdução fornece a base necessária para a compreensão do relatório, esclarecendo o propósito da análise e os caminhos escolhidos para o desenvolvimento da pesquisa ou atividade.
+
+\subsection{Objetivos}
+\hspace{2.5ex}
+Os objetivos deste relatório buscam definir a finalidade do estudo e os resultados esperados com a execução das atividades. 
+Dividem-se em \textbf{objetivo geral} e \textbf{objetivos específicos}, conforme descrito a seguir:
+
+\subsubsection{Objetivo Geral}
+Apresentar de forma ampla a meta central do trabalho, servindo como norteador para o desenvolvimento do relatório. 
+
+\subsubsection{Objetivos Específicos}
+\begin{itemize}
+    \item Identificar os principais fatores relacionados ao tema abordado;
+    \item Comparar métodos e técnicas pertinentes;
+    \item Aplicar ferramentas ou procedimentos adequados à análise;
+    \item Avaliar os resultados obtidos a partir da execução das atividades.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%% DESENVOLVIMENTO %%%%%%%%%%%
+
+\section{DESENVOLVIMENTO}
+\section{Desenvolvimento}
+
+Nesta seção, apresenta-se de forma detalhada todo o processo de realização do trabalho. 
+O desenvolvimento é estruturado em tópicos que abordam desde o embasamento teórico até a análise dos resultados obtidos.
+
+\subsection{Referencial Teórico}
+Apresentar conceitos, fundamentos e trabalhos relacionados que dão suporte ao estudo realizado.
+
+\subsection{Metodologia}
+Descrever os métodos, procedimentos, técnicas ou ferramentas utilizados para a execução das atividades, de forma clara e detalhada.
+
+\subsection{Execução das Atividades}
+Relatar as etapas do processo desenvolvido, registrando a sequência das ações realizadas durante o trabalho.
+
+\subsection{Resultados}
+Apresentar os principais dados obtidos, utilizando tabelas, gráficos ou descrições textuais.
+
+\subsection{Discussão}
+Analisar criticamente os resultados, comparando-os com a teoria, com estudos relacionados ou com os objetivos propostos inicialmente.
+
+Para gerar uma figura e citá-la, usar \ref{fig:LOGO}
+
+\begin{figure}[H]
+    \centering
+    \caption{Logo da Uninassau}
+    \includegraphics[width = 0.6\textwidth]{Images/LOGO.png}
+    \label{fig:LOGO}
+    \par Fonte: UNINASSAU.
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%% CONCLUSÃO %%%%%%%%%%%
+
+\section{Resultados}
+
+Nesta seção são apresentados os principais resultados obtidos a partir da execução do trabalho. 
+Os dados coletados foram organizados em tabelas, gráficos e descrições textuais, de modo a demonstrar o cumprimento dos objetivos propostos.
+
+\subsection{Apresentação dos Resultados}
+Descrever os resultados encontrados, destacando os pontos mais relevantes. 
+Quando necessário, utilizar tabelas, figuras ou gráficos para melhor visualização das informações.
+
+\subsection{Análise dos Resultados}
+Interpretar os dados apresentados, relacionando-os com os objetivos do trabalho e, quando pertinente, com o referencial teórico.
+
+% Exemplo de figura (opcional)
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.7\textwidth]{grafico.png}
+%    \caption{Exemplo de gráfico gerado a partir dos resultados.}
+%    \label{fig:resultados}
+%\end{figure}
+
+\section{Conclusão}
+
+A conclusão retoma os objetivos definidos no início do trabalho e avalia em que medida foram atingidos. 
+Destacam-se os principais achados, as contribuições do estudo e as possíveis limitações encontradas durante sua execução. 
+
+Sugere-se, ainda, o desenvolvimento de trabalhos futuros que possam ampliar ou aprofundar a análise realizada, contribuindo para o avanço do tema abordado.
+
+%%%%%%%% REFERÊNCIAS %%%%%%%%%%%%%%%%%
+
+% Referências bibliogáficas (geradas automaticamente)
+%\addcontentsline{toc}{chapter}{Referências bibliográficas}
+%\bibliography{bib/bibliografia}
+%\addbibresource{bib/bibliografia}
+%\bibliography{}
+%\printbibliography
+\appendix
+
+%Apêndice A
+\include{apendice}
+
+\begin{thebibliography}{9}
+
+\bibitem{pasco1}
+SIMULADOR CoppeliaSim. Coppelia Robotics, 2021. 
+Disponível em: <\url{https://www.coppeliarobotics.com/}>. 
+Acesso em: 22 nov. 2021.
+
+\bibitem{artigo1}
+SANTOS, Rafael; OLIVEIRA, João. 
+Aprendizado de Máquina aplicado à Robótica Educacional. 
+\textit{Revista Brasileira de Computação Aplicada}, v. 12, n. 3, p. 45--58, 2020.
+
+\bibitem{revista1}
+SILVA, Maria Clara; PEREIRA, André. 
+O impacto da Inteligência Artificial no mercado de trabalho. 
+\textit{Revista de Tecnologia e Sociedade}, Curitiba, v. 8, n. 2, p. 101--115, 2019.
+
+\bibitem{site1}
+OPENAI. ChatGPT: modelo de linguagem de inteligência artificial. 
+Disponível em: <\url{https://chat.openai.com/}>. 
+Acesso em: 25 ago. 2025.
+
+\bibitem{livro1}
+PREISS, Bruno R. 
+\textit{Estruturas de Dados e Algoritmos em Java}. 
+2. ed. São Paulo: Bookman, 2014.
+
+\bibitem{tese1}
+ALMEIDA, José Ricardo. 
+\textit{Sistemas Inteligentes aplicados à Indústria 4.0}. 
+2018. 180 f. Tese (Doutorado em Engenharia de Produção) – Universidade Federal de Santa Catarina, Florianópolis, 2018.
+
+\end{thebibliography}
+
+\end{document}
+
+
+
+
+
+
+
+
